@@ -1,0 +1,8 @@
+<h2>ثبت‌نام</h2>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="نام کاربری" required><br>
+    <input type="password" name="password" placeholder="رمز عبور" required><br>
+    <button type="submit">ثبت‌نام</button>
+</form>
+<a href="{% url 'login' %}">ورود</a>
